@@ -5,6 +5,39 @@
 # this file and re-run i3-config-wizard(1).
 #
 
+### COLORS ###
+## GRUVBOX
+set $bg #282828
+set $fg #ebdbb2
+set $gray #928374
+set $red1 #cc241d
+set $red2 #fb4934
+set $green1 #98971a
+set $green2 #b8bb26
+set $yellow1 #d79921
+set $yellow2 #fabd2f
+set $blue1 #458588
+set $blue2 #83a598
+set $purple1 #b16286
+set $purple2 #d3869b
+set $aqua1 #689d6a
+set $aqua2 #8ec07c
+set $orange1 #d65d0e
+set $orange2 #fe8019
+set $bg0_h #1d2021
+set $bg0 #282828
+set $bg1 #3c3836
+set $bg2 #504945
+set $bg3 #665c54
+set $bg4 #7c6f64
+set $bg0_s #32302f
+set $fg0 #fbf1c7
+set $fg1 #ebdbb2
+set $fg2 #d5c4a1
+set $fg3 #bdae93
+set $fg4 #a89984
+
+
 # i3 config file (v4)
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
@@ -92,12 +125,19 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
+### CUSTOM WORKSPACES ###
+set $ws1 " Code 1 "
+set $ws2 " Web 2"
+set $ws3 " Code 3"
+set $ws4 " Slack 4"
+set $ws5 "  Mail 5"
+
 # switch to workspace
-bindsym $mod+1 workspace 1
-bindsym $mod+2 workspace 2
-bindsym $mod+3 workspace 3
-bindsym $mod+4 workspace 4
-bindsym $mod+5 workspace 5
+bindsym $mod+1 workspace $ws1
+bindsym $mod+2 workspace $ws2
+bindsym $mod+3 workspace $ws3
+bindsym $mod+4 workspace $ws4
+bindsym $mod+5 workspace $ws5
 bindsym $mod+6 workspace 6
 bindsym $mod+7 workspace 7
 bindsym $mod+8 workspace 8
@@ -154,6 +194,12 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3blocks -c ~/.config/i3blocks/i3blocks.conf
         tray_output primary
+		colors {
+			background $bg
+			focused_workspace $fg $green1 $fg0
+			inactive_workspace $fg4 $bg3 $fg
+			urgent_workspace $fg4 $red1 $fg
+		}
 }
 
 # Gaps config
