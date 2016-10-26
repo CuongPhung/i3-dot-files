@@ -4,3 +4,6 @@
 # and copy fonts over to that folder.
 mkdir -p ~/.fonts
 cp Font-Awesome/fonts/fontawesome-webfont.ttf YosemiteSanFranciscoFont/*.ttf ~/.fonts/
+
+# Move config files to correct location in ~/.config/*/
+cp -r .config/* ~/.config/
