@@ -1,0 +1,6 @@
+[submodule "Font-Awesome"]
+	path = Font-Awesome
+	url = git@github.com:FortAwesome/Font-Awesome
+[submodule "YosemiteSanFranciscoFont"]
+	path = YosemiteSanFranciscoFont
+	url = git@github.com:supermarin/YosemiteSanFranciscoFont
