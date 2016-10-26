@@ -4,3 +4,6 @@
 [submodule "YosemiteSanFranciscoFont"]
 	path = YosemiteSanFranciscoFont
 	url = git@github.com:supermarin/YosemiteSanFranciscoFont
+[submodule "i3"]
+	path = i3
+	url = git@github.com:o4dev/i3
