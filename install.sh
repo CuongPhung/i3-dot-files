@@ -6,4 +6,9 @@ mkdir -p ~/.fonts
 cp Font-Awesome/fonts/fontawesome-webfont.ttf YosemiteSanFranciscoFont/*.ttf ~/.fonts/
 
 # Move config files to correct location in ~/.config/*/
-cp -r .config/* ~/.config/
+cp -r .config/* ~/.config
+
+#Install i3gaps
+cd i3
+make && sudo make install
+cd ..
