@@ -3,7 +3,9 @@
 #
 # Should you change your keyboard layout some time, delete
 # this file and re-run i3-config-wizard(1).
-#
+
+# Remove title border
+for_window [class="^.*"] border pixel 1
 
 ### COLORS ###
 ## GRUVBOX
