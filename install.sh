@@ -9,6 +9,6 @@ cp Font-Awesome/fonts/fontawesome-webfont.ttf YosemiteSanFranciscoFont/*.ttf ~/.
 cp -r .config/* ~/.config
 
 #Install i3gaps
-cd i3
+cd i3-gaps
 make && sudo make install
 cd ..
