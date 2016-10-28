@@ -213,4 +213,5 @@ gaps inner 10
 gaps outer 10
 
 # Autostart
-exec_always nm-applet
+exec --no-startup-id nm-applet
+exec --no-startup-id compton
