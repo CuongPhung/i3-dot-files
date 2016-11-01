@@ -8,5 +8,5 @@ Dependencies:
 * rofi (program launcher)
 
 Installation:
-* git clone git@@github.com:CuongPhung/i3-dot-files
+* git clone git@github.com:CuongPhung/i3-dot-files
 * ./install.sh
