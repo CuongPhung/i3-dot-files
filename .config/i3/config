@@ -165,7 +165,10 @@ bindsym $mod+Shift+0 move container to workspace 10
 ### ASSIGN APPLICATION TO WORKSPACE ###
 assign [class="Thunderbird"] → $ws5
 assign [class="Slack"] → $ws4
-for_window [class="Spotify"] move to workspace $ws6
+for_window [class="Spotify"] move to workspace $ws6   # Workaround for spotify.
+
+### DEFAULT OUTPUT FOR WORKSPACE ###
+workspace $ws6 output eDP1     # Move music workspace to internal screen
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
